@@ -1,0 +1,78 @@
+.menu
+	&-link
+		display: block 
+		width: 50px
+		height: 50px
+		background-color: #fff 
+		border-radius: 50% 
+		box-shadow: 1px 1px 10px rgba(0,0,0, 0.4)
+		position: fixed
+		top: 20px
+		left: 20px
+		z-index: 110 
+		span, span:before, span:after 
+			display: block 
+			height: 2px 
+			width: 18px 
+			background-color: #333333 
+			position: absolute 
+			left: 50%
+			margin-left: -9px
+			top: 50%
+			margin-top: -1px 
+		span:before
+			content: ''
+			margin-top: -7px
+			transition: all 0.6s ease
+		span:after 
+			content: ''
+			margin-top: 5px
+			transition: all 0.6s ease
+		&__active
+			span
+				background-color: transparent 
+				&:before
+					transform: rotate(135deg)
+					margin-top: 0
+				&:after 
+					transform: rotate(-135deg)
+					margin-top: 0
+	
+.menu
+	background-color: #800080
+	width: 100vw
+	height: 100vh
+	z-index: 100
+	display: flex
+	justify-content: center
+	align-items: center
+	position: fixed
+	top: 0
+	left: -100vw
+	transition: all 0.5s ease
+	ul
+		list-style-type: none
+		text-align: center
+		padding: 0
+		a 
+			color: #fff 
+			display: block
+			width: 100vw
+			text-decoration: none
+			line-height: 4
+			font-weight: 100
+			letter-spacing: 4px
+			transition: all 0.5s ease
+			&:hover 
+				background-color: rgba(255,255,255, 0.4)
+	&-active 
+		left: 0
+
+				
+
+
+
+
+			
+
+

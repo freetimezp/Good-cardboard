@@ -1,0 +1,21 @@
+.button
+	font-size: 14px
+	font-weight: 400
+	color: $white
+	border: 1px solid $active-color
+	background-color: $active-color
+	padding: 13px 20px
+	cursor: pointer
+	border-radius: 5px
+	transition: all 0.6s ease
+	&-o 
+		background-color: transparent
+		color: $dark
+		border: 1px solid rgba(#373737, 0.5)
+		&:hover
+			color: $white
+			border: 1px solid rgba($active-color,20)
+	img
+		vertical-align: middle
+	&:hover
+		background-color: darken($active-color,20)
